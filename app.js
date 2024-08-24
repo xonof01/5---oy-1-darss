@@ -172,5 +172,145 @@
 //   console.log(newLanguage2);
 //   console.log(newMode2); 
 //   console.log(newFontSize2); 
+
+
+//   1-mashq
+// function configure(options) {
+//     const { host = "localhost", port = 8080, protocol = "http" } = options;
+//     console.log(`Connecting to ${protocol}://${host}:${port}`);
+//   }
+  
+//   configure({ host: "127.0.0.1" }); 
+  
+// 2-mashq
+// function combineAndExtract(arr1, arr2) {
+//     const combinedArray = arr1.concat(arr2);
+//     const [first, second, third] = combinedArray;
+//     return { first, second, third };
+//   }
+
+//   function combineAndExtract(arr1, arr2) {
+//     const combinedArray = arr1.concat(arr2);
+//     const result = {};
+//     for (let i = 0; i < 3; i++) {
+//       result[`first${i + 1}`] = combinedArray[i];
+//     }
+//     return result;
+//   }
+
+  
+//   function combineAndExtract(arr1, arr2) {
+//     const combinedArray = [...arr1, ...arr2];
+//     const [first, second, third] = combinedArray;
+//     return { first, second, third };
+//   }
+  
+// masallar
+
+// 1-masal
+
+// function toqSonlarYigindisi(arr) {
+//     return arr.filter(son => son % 2 !== 0).reduce((sum, son) => sum + son, 0);
+//   }
+  
+//   function toqSonlarYigindisi(arr) {
+//     let sum = 0;
+//     arr.forEach(son => {
+//       if (son % 2 !== 0) {
+//         sum += son;
+//       }
+//     });
+//     return sum;
+//   }
+
+//   function toqSonlarYigindisi(arr) {
+//     let sum = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//       if (arr[i] % 2 !== 0) {
+//         sum += arr[i];
+//       }
+//     }
+//     return sum;
+//   }
+  
+// 2
+// function engKichikElement(arr) {
+//     if (arr.length === 0) {
+//       return null;
+//     }
+//     return Math.min.apply(null, arr);
+//   }
+
+//   function engKichikElement(arr) {
+//     if (arr.length === 0) {
+//       return null; 
+//     }
+  
+//     let engKichik = arr[0]; 
+//     for (let i = 1; i < arr.length; i++) {
+//       if (arr[i] < engKichik) {
+//         engKichik = arr[i];
+//       }
+//     }
+//     return engKichik;
+//   }
+  
+//   function engKichikElement(arr) {
+//     if (arr.length === 0) {
+//       return null;
+//     }
+//     arr.sort((a, b) => a - b); 
+//     return arr.shift(); 
+//   }
+  
+
+// 4 
+// function raqamlarniAjrat(matn) {
+//     return matn.split('').filter(belgi => !isNaN(parseInt(belgi)));
+//   }
+  
+//   function raqamlarniAjrat(matn) {
+//     return matn.replace(/[^0-9]/g, '');
+//   }
+
+//   function raqamlarniAjrat(matn) {
+//     return matn.match(/\d+/g);
+//   }
+  
+//   5
+//   function sozlarniTeskari(matn) {
+//     return matn.split(' ').reverse().join(' ');
+//   }
+
+
+//   function sozlarniTeskari(matn) {
+//     let sozlar = matn.split(' ');
+//     let teskariSozlar = [];
+//     for (let i = sozlar.length - 1; i >= 0; i--) {
+//       teskariSozlar.unshift(sozlar[i]);
+//     }
+//     return teskariSozlar.join(' ');
+// //   }
+
+// 7
+// function kublarniHisobla(sonlar) {
+//     let kublar = [];
+//     for (const son of sonlar) {
+//       kublar.push(son * son * son);
+//     }
+//     return kublar;
+//   }
+
+//   function kublarniHisobla(sonlar) {
+//     let kublar = [];
+//     for (let i = 0; i < sonlar.length; i++) {
+//       kublar.push(sonlar[i] * sonlar[i] * sonlar[i]);
+//     }
+//     return kublar;
+//   }
+
+//   function kublarniHisobla(sonlar) {
+//     return sonlar.map(son => son * son * son);
+//   }
   
   
