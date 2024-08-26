@@ -277,7 +277,7 @@
 //     return matn.match(/\d+/g);
 //   }
   
-//   5
+//   5.
 //   function sozlarniTeskari(matn) {
 //     return matn.split(' ').reverse().join(' ');
 //   }
